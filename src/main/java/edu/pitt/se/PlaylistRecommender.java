@@ -11,9 +11,9 @@ public class PlaylistRecommender {
         // TODO: Implement classifyEnergy()
         double avg;
 
-        double total_sum = sum(int_list)  
-        double count = len(int_list)  
-        double average = total_sum / count  
+        double total_sum = sum(int_list); 
+        double count = len(int_list);
+        double average = total_sum / count; 
 
         if(bpms >= 140){
             return "HIGH";
@@ -41,7 +41,7 @@ public class PlaylistRecommender {
        Matcher m = p.matcher(title);
 
        if (!m.matches()) {
-           return false
+           return false;
        }
        return true; 
         
