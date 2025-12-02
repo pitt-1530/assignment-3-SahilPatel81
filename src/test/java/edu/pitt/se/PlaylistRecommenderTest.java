@@ -9,4 +9,10 @@ public class PlaylistRecommenderTest {
     public void placeholder() {
         assertTrue(true);
     }
+
+    @Test
+    public void testNormalize() {
+        assertEquals(100, PlaylistRecommender.normalizeVolume(150));
+    }
+
 }
