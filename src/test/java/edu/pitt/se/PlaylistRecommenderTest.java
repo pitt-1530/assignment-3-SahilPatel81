@@ -15,4 +15,9 @@ public class PlaylistRecommenderTest {
         assertEquals(100, PlaylistRecommender.normalizeVolume(150));
     }
 
+    @Test
+    public void testNormalizeTwo() {
+        assertEquals(0, PlaylistRecommender.normalizeVolume(-150));
+    }
+
 }
