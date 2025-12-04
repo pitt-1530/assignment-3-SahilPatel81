@@ -35,6 +35,11 @@ public class PlaylistRecommenderTest {
         assertEquals(false, PlaylistRecommender.isValidTrackTitle("SupermanandSpidermanugsgfgdrtghhhhhhhhhhh"));
     }
 
+    @Test
+    public void testValidTitleIncorrectExact30() {
+        assertEquals(true, PlaylistRecommender.isValidTrackTitle("123451234512345123451234512345"));
+    }
+
      @Test
     public void testValidTitleIncorrectTooShort() {
         assertEquals(false, PlaylistRecommender.isValidTrackTitle(""));
@@ -53,6 +58,11 @@ public class PlaylistRecommenderTest {
     @Test
     public void testHighEnergy() {
         assertEquals("HIGH", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(180, 200, 220)));
+    }
+
+    @Test
+    public void testHighEdgeEnergy() {
+        assertEquals("HIGH", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(140, 140, 140)));
     }
     
 
