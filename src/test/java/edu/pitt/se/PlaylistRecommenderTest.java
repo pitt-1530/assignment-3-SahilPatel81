@@ -22,7 +22,12 @@ public class PlaylistRecommenderTest {
 
      @Test
     public void testValidTitleCorrect() {
-        assertEquals("SupermanandSpiderman", PlaylistRecommender.isValidTrackTitle("SupermanandSpiderman"));
+        assertEquals(true, PlaylistRecommender.isValidTrackTitle("SupermanandSpiderman"));
+    }
+
+     @Test
+    public void testValidTitleIncorrect() {
+        assertEquals(false, PlaylistRecommender.isValidTrackTitle("SupermanandSpiderman%"));
     }
 
 }
