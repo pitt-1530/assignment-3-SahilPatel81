@@ -52,7 +52,7 @@ public class PlaylistRecommenderTest {
 
     @Test
     public void testHighEnergy() {
-        assertEquals("MEDIUM", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(180, 200, 220)));
+        assertEquals("HIGH", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(180, 200, 220)));
     }
     
 
