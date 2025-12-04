@@ -37,7 +37,7 @@ public class PlaylistRecommenderTest {
 
     @Test
     public void testValidTitleIncorrectExact30() {
-        assertEquals(true, PlaylistRecommender.isValidTrackTitle("123451234512345123451234512345"));
+        assertEquals(true, PlaylistRecommender.isValidTrackTitle("esofagodermatodigiunoplasticaS"));
     }
 
      @Test
