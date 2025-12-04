@@ -42,7 +42,7 @@ public class PlaylistRecommenderTest {
 
     @Test
     public void testValidclassifyEnergyLow() {
-        assertEquals("LOW", PlaylistRecommender.classifyEnergy(3,4,5,6,7));
+        assertEquals("LOW", PlaylistRecommender.classifyEnergy({3,4,5,6,7}));
     }
 
     
