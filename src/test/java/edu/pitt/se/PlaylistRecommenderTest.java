@@ -45,6 +45,15 @@ public class PlaylistRecommenderTest {
         assertEquals("LOW", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(6, 7, 8)));
     }
 
+    @Test
+    public void testMediumEnergy() {
+        assertEquals("MEDIUM", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(145, 130, 120)));
+    }
+
+    @Test
+    public void testHighEnergy() {
+        assertEquals("MEDIUM", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(180, 200, 220)));
+    }
     
 
 }
