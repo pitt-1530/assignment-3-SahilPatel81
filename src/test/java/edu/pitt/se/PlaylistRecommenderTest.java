@@ -40,4 +40,11 @@ public class PlaylistRecommenderTest {
         assertEquals(false, PlaylistRecommender.isValidTrackTitle(""));
     }
 
+    @Test
+    public void testValidclassifyEnergyLow() {
+        assertEquals("LOW", PlaylistRecommender.classifyEnergy(3,4,5,6,7));
+    }
+
+    
+
 }
