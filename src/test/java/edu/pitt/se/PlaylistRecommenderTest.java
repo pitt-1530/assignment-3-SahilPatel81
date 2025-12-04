@@ -41,7 +41,7 @@ public class PlaylistRecommenderTest {
     }
 
     @Test
-    void testLowEnergy() {
+    public void testLowEnergy() {
         assertEquals("LOW", classifyEnergy(Arrays.asList(6, 7, 8)));
     }
 
