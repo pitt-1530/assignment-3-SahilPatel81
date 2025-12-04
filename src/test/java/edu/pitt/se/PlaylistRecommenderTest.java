@@ -42,7 +42,7 @@ public class PlaylistRecommenderTest {
 
     @Test
     public void testLowEnergy() {
-        assertEquals("LOW", PlaylistRecommender.classifyEnergy(Arrays.asList(6, 7, 8)));
+        assertEquals("LOW", PlaylistRecommender.classifyEnergy(java.util.Arrays.asList(6, 7, 8)));
     }
 
     
