@@ -20,4 +20,9 @@ public class PlaylistRecommenderTest {
         assertEquals(0, PlaylistRecommender.normalizeVolume(-150));
     }
 
+     @Test
+    public void testValidTitleCorrect() {
+        assertEquals("SupermanandSpiderman", PlaylistRecommender.isValidTrackTitle("SupermanandSpiderman"));
+    }
+
 }
