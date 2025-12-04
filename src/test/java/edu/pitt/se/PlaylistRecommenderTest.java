@@ -30,4 +30,14 @@ public class PlaylistRecommenderTest {
         assertEquals(false, PlaylistRecommender.isValidTrackTitle("SupermanandSpiderman%"));
     }
 
+      @Test
+    public void testValidTitleIncorrectTooLong() {
+        assertEquals(false, PlaylistRecommender.isValidTrackTitle("SupermanandSpidermanugsgfgdrtghhhhhhhhhhh"));
+    }
+
+     @Test
+    public void testValidTitleIncorrectTooShort() {
+        assertEquals(false, PlaylistRecommender.isValidTrackTitle(""));
+    }
+
 }
